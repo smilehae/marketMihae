@@ -1,0 +1,124 @@
+html{
+    box-sizing: border-box;
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+.top_banner{
+    background-color: #5F0080;
+    color:white;
+    padding: .6rem;
+    text-align: center;
+    font-size: .9rem;
+}
+.myArrow{
+    margin-left: 1rem;
+}
+
+header{
+    height:8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width:80%;
+    margin:0 auto;
+    padding-top: 8px;
+}
+
+.main_logo{
+    position: absolute;
+    top: 5rem;
+    left:45%;
+    width:fit-content;
+    margin:0 auto;
+    text-align: center;
+}
+.mini_text{
+    position: relative;
+    top:10px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+.large_text{
+    font-family: 'Lobster', cursive;
+    font-size: 2.8rem;
+}
+.deliver_btn{
+    height: fit-content;
+    padding: 3px 10px;
+    background-color: white;
+    border:1px solid rgba(0,0,0,0.3);
+    color:gray;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+.emp{
+    color:#5F0080;
+}
+.main_btn{
+    background-color: white;
+    padding:0px 10px;
+    border:none;
+    font-size: 0.8rem;
+}
+.divider{
+    display: inline-block;
+    position: relative;
+    top:3px;
+    width:1px;
+    height:1rem;
+    background-color: rgba(0,0,0,0.3);
+}
+nav{
+    width:80%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    border:none;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+}
+
+.nav_btn{
+    flex: 2 0 auto;
+    font-size: 1rem;
+    padding:0 10px;
+}
+.tools{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search_container{
+    background-color: rgba(0,0,0,0.05);
+    padding:5px 15px;
+    border-radius: 15px;
+    
+
+}
+input[type=text]{
+    background-color: rgba(0,0,0,0);
+    border:none;
+    outline: none;
+}
+
+input::placeholder{
+    color:rgba(0,0,0,0.3);
+}
+.icon_btn{
+    font-size: 1.5rem;
+    padding: 5px;
+    
+}

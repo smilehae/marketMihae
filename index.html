@@ -3,22 +3,29 @@
     <head>
         <title>마켓미해</title>
         <script src="https://kit.fontawesome.com/5316a0a50e.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Lobster&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
         <div class="top_banner">
-            <p>지금 가입하고 인기상품 100원에 받아가세요! > </p>
+            <p>지금 가입하고 인기상품 100원에 받아가세요! <i class="fas fa-chevron-right myArrow"></i></p>
         </div>
         <header>
-           <button class="deliver_btn">샛별 택배 배송안내 > </button>
+           <button class="deliver_btn"><span class="emp">샛별 택배</span> 배송안내<i class="fas fa-chevron-right myArrow"></i> </button>
            <div class="main_btns">
-               <button class="main_btn">회원가입</button>
+               <button class="main_btn emp">회원가입</button>
+               <div class="divider"></div>
                <button class="main_btn">로그인</button>
+               <div class="divider"></div>
                <button class="main_btn">고객센터 ▼</button>
            </div>
-           <div class="main_logo">
-               <span class="mini_text">MARKET</span>
+           <span class="main_logo emp">
+               
+               <span class="mini_text">MARKET</span><br>
                <span class="large_text">Mihae</span>
-           </div>
+           </span>
         </header>
         <nav>
             <button class="nav_btn">전체 카테고리</button>
@@ -26,15 +33,16 @@
             <button class="nav_btn">베스트</button>
             <button class="nav_btn">알뜰쇼핑</button>
             <button class="nav_btn">특가/혜택</button>
-            <form>
-                <div class="search_container">
-                    <input type="text">
-                    <button type="submit"><i class="fas fa-search"></i></button>
-                </div>
-            </form>
-            <button><i class="fas fa-map-marker-alt"></i></button>
-            <button><i class="fas fa-shopping-cart"></i></button>
-            
+            <div class="tools">
+                <form>
+                    <div class="search_container">
+                        <input type="text" placeholder="검색어를 입력해주세요.">
+                        <button type="submit" class="search_btn"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+                <button class="icon_btn"><i class="fas fa-map-marker-alt "></i></button>
+                <button class="icon_btn"><i class="fas fa-shopping-cart "></i></button>
+            </div>
         </nav>
     </body>
 </html>
