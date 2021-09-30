@@ -122,6 +122,9 @@ input::placeholder{
     padding: 5px;
     
 }
+.main_event{
+    position: relative;
+}
 
 .main_image{
    background-color: #ffcc66;
@@ -131,5 +134,40 @@ input::placeholder{
    background-size: cover;
    object-fit: cover;
    background-position: center;
+}
 
+.event_container{
+    position:absolute;
+    top:20%;
+    left:20%;
+    font-size: 1.7rem;
+    color:white;
+    font-weight: 300;
+
+}
+
+.event_container > *{
+    text-shadow: 0 0 10px black;
+}
+
+.event_container h2:first-of-type{
+    font-weight: 300;
+}
+
+.event_container h2:nth-of-type(2){
+    position: relative;
+    top:-5px;
+}
+
+.event_container h4{
+    font-weight: 300;
+    font-size: 1.2rem;
+    position: relative;
+    top:-10px;
+}
+.due_date{
+    color:rgb(255, 255, 255);
+    position: absolute;
+    right:30%;
+    bottom:5px;
 }
