@@ -181,11 +181,16 @@ input::placeholder{
 }
 section{
     padding: 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gray_back{
+    background-color: rgba(0,0,0,0.05);
+
 }
 
-section:nth-of-type(even){
-    background-color: rgba(0,0,0,0.05);
-}
 section h2{
     text-align: center;
     font-weight: normal;
@@ -264,4 +269,80 @@ section h2{
     position:relative;
     top:10px;
     font-weight: 300;
+}
+.tag_container{
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.tag{
+    background-color: rgba(0,0,0,0.05);
+    padding: 0.5rem 1rem;
+    margin:0.5rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.tag.active{
+    background-color: #5F0080;
+    color:white;
+}
+.tag:hover{
+    color:#5F0080;
+    background-color: rgba(115, 30, 136, 0.05);
+}
+.show_all_btn{
+    border:1px solid gray;
+    padding: 1rem 10rem;
+    margin: 5rem auto;
+}
+footer{
+    flex:1 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+footer h2{
+    padding: 0.5rem 2rem;
+}
+footer p{
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+.footer_container{
+    flex:1 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+footer button{
+    width: 9rem;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 0.5rem 1.5rem;
+    margin:1rem;
+}
+.gray{
+    color:gray;
+}
+.link_container{
+    display: flex;
+}
+footer a {
+    text-decoration: none;
+    color:black;
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+    flex:1 0 auto;
+}
+.info{
+    font-size: 0.5rem;
+    width:300px;
+    
+}
+
+.myFooter{
+    flex:1 0 auto;
+    position:relative;
 }
