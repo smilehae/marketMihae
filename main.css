@@ -309,6 +309,10 @@ section h2{
     color:#5F0080;
     background-color: rgba(115, 30, 136, 0.05);
 }
+.tag.active:hover{
+    background-color: #5F0080;
+    color:white;
+}
 .show_all_btn{
     border:1px solid gray;
     padding: 1rem 10rem;
