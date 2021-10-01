@@ -27,14 +27,16 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    width:80%;
     margin:0 auto;
     padding-top: 8px;
+    position: relative;
+    max-width:1200px;
+
 }
 
 .main_logo{
     position: absolute;
-    top: 5rem;
+    top: 1.5rem;
     left:45%;
     width:fit-content;
     margin:0 auto;
@@ -59,15 +61,21 @@ header{
     color:gray;
     border-radius: 10px;
     font-size: 0.8rem;
+    margin-left: 2rem;
 }
 .emp{
     color:#5F0080;
 }
+
 .main_btn{
     background-color: white;
     padding:0px 10px;
     border:none;
     font-size: 0.8rem;
+}
+
+.main_btn:last-of-type{
+    margin-right: 1rem;
 }
 .divider{
     display: inline-block;
@@ -78,7 +86,7 @@ header{
     background-color: rgba(0,0,0,0.3);
 }
 nav{
-    width:80%;
+    max-width:1200px;
     margin:0 auto;
     display: flex;
     justify-content: space-between;
