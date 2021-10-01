@@ -179,3 +179,89 @@ input::placeholder{
     right:30%;
     bottom:5px;
 }
+section{
+    padding: 5rem 5rem;
+}
+
+section:nth-of-type(even){
+    background-color: rgba(0,0,0,0.05);
+}
+section h2{
+    text-align: center;
+    font-weight: normal;
+}
+
+.item_container{
+    margin:0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.item{
+    /* background-color: burlywood; */
+    display: inline-block;
+}
+.item img{
+    margin:10px;
+    height:300px;
+  
+}
+.item_desc{
+    position:relative;
+    left:8px;
+}
+.sale_rate{
+    color:orangered;
+    font-weight: bold;                                          
+}
+.not_sale{
+    display: none;
+}
+.item_price{
+    font-weight: bold;
+}
+.origin_price{
+    color:rgb(167, 167, 167);
+    text-decoration: line-through;
+}
+.for_sale .item img {
+  
+    width: 300px;
+}
+
+.item_img{
+    background-color: lightpink;
+    width:300px;
+    height:300px;
+    margin:0.7rem;
+}
+.item_img:nth-of-type(1){
+    background:url(fruit.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.for_sale .item_desc{
+    text-align: center;
+}
+.for_sale .item_desc p:nth-child(1){
+    font-weight: bold;
+}
+.for_sale .item_desc p:nth-child(2){
+    color:gray;
+}
+.mid_banner{
+    background-color: rgba(0,0,0,0.05);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding:2rem 4rem;
+    font-size: 1.3rem;
+   
+}
+
+.mid_banner h5{
+    position:relative;
+    top:10px;
+    font-weight: 300;
+}
