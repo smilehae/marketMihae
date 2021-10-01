@@ -4,11 +4,26 @@ let clickedTag = 0;
 // "스킨케어 메이크업","헤어 바디 구강","주방용품","가전제품","베이비 키즈","반려동물"];
 const menus = [];
 const tags = Array.from(document.querySelectorAll(".tag"));
+const categoryBtn = document.querySelector('.category_btn');
+const categoryContainer = document.querySelector(".category_container");
+const category = document.querySelector(".myCategory");
 
 function abstractMenu(){
     for(let i=0;i<tags.length;i++){
         menus.push(tags[i].textContent);
     }
+}
+
+function fillCategory(){
+    const content = tags.map(tag=> `<li>${tag.textContent}</li>`).join("");
+    categoryContainer.innerHTML=content;
+}
+
+function showCategory(){
+    categoryContainer.classList.remove("inactive");
+}
+function collapseCategory(){
+    categoryContainer.classList.add("inactive");
 }
 
 function swtichTag(e){
@@ -17,8 +32,11 @@ function swtichTag(e){
     tags[clickedTag].classList.add("active");
     const buttonName = document.querySelector(".show_name");
     buttonName.textContent = tags[clickedTag].textContent;
-
 }
 
 abstractMenu();
+fillCategory();
 tags.forEach(tag=> tag.addEventListener("click",swtichTag));
+category.addEventListener("mouseenter",showCategory);
+category.addEventListener("mouseleave",collapseCategory);
+
