@@ -393,16 +393,21 @@ footer a {
     align-self: center;
     cursor: pointer;
 }
-.category_container{
-    background-color: white;
-}
+
 .category_container li{
     list-style: none;
     padding: 0.5rem 1rem;
 }
 .category_container li:hover{
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgb(230, 230, 230);
     color:#5F0080;
+    font-weight: bold;
+}
+.category_container li ul li:hover{
+    color:#5F0080;
+    text-decoration: underline;
+    text-underline-offset: 20%;
+    
 }
 .myCategory{
     display: flex;

@@ -7,7 +7,7 @@ const tags = Array.from(document.querySelectorAll(".tag"));
 const categoryContainer = document.querySelector(".category_container");
 const category = document.querySelector(".myCategory");
 abstractMenu();
-fillCategory();
+//fillCategory();
 const categoryItem = Array.from(categoryContainer.querySelectorAll("li"));
 
 function abstractMenu(){
