@@ -386,7 +386,6 @@ footer a {
     z-index: 1;
     top:45px;
     left:0px;
-    padding: 1rem;
     border:1px solid rgba(0,0,0,0.15);
     
 }
@@ -394,10 +393,16 @@ footer a {
     align-self: center;
     cursor: pointer;
 }
-
+.category_container{
+    background-color: white;
+}
 .category_container li{
     list-style: none;
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
+}
+.category_container li:hover{
+    background-color: rgba(0,0,0,0.1);
+    color:#5F0080;
 }
 .myCategory{
     display: flex;
@@ -412,3 +417,13 @@ footer a {
 .inactive{
     display: none;
 }
+.hover_back{
+    color:#5F0080;
+    background-color: rgba(115, 30, 136, 0.05);
+}
+.hover_under{
+    color:#5F0080;
+    text-decoration: underline;
+    text-underline-offset: 20%;
+}
+

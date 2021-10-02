@@ -4,9 +4,11 @@ let clickedTag = 0;
 // "스킨케어 메이크업","헤어 바디 구강","주방용품","가전제품","베이비 키즈","반려동물"];
 const menus = [];
 const tags = Array.from(document.querySelectorAll(".tag"));
-const categoryBtn = document.querySelector('.category_btn');
 const categoryContainer = document.querySelector(".category_container");
 const category = document.querySelector(".myCategory");
+abstractMenu();
+fillCategory();
+const categoryItem = Array.from(categoryContainer.querySelectorAll("li"));
 
 function abstractMenu(){
     for(let i=0;i<tags.length;i++){
@@ -15,7 +17,7 @@ function abstractMenu(){
 }
 
 function fillCategory(){
-    const content = tags.map(tag=> `<li>${tag.textContent}</li>`).join("");
+    const content = tags.map((tag,i)=> `<li data-index="${i}">${tag.textContent}</li>`).join("");
     categoryContainer.innerHTML=content;
 }
 
@@ -26,6 +28,11 @@ function collapseCategory(){
     categoryContainer.classList.add("inactive");
 }
 
+function showDetailCategory(e){
+   console.log("hi");
+    
+}
+
 function swtichTag(e){
     tags[clickedTag].classList.remove("active");
     clickedTag = this.dataset.index;
@@ -34,9 +41,9 @@ function swtichTag(e){
     buttonName.textContent = tags[clickedTag].textContent;
 }
 
-abstractMenu();
-fillCategory();
+
+
 tags.forEach(tag=> tag.addEventListener("click",swtichTag));
 category.addEventListener("mouseenter",showCategory);
 category.addEventListener("mouseleave",collapseCategory);
-
+categoryItem.forEach(item=> item.addEventListener("mouseenter",showDetailCategory));
