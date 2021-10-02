@@ -460,13 +460,19 @@ footer a {
 .active{
     display: inline-block;
 }
-.hover_back{
-    color:#5F0080;
-    background-color: rgba(115, 30, 136, 0.05);
-}
-.hover_under{
-    color:#5F0080;
-    text-decoration: underline;
-    text-underline-offset: 20%;
-}
 
+/* 고객센터 토글*/
+.setting{
+    position: absolute;
+    line-height: 1.8;
+    padding:0.3rem;
+    right:0px;
+    top:40px;
+    flex-direction: column;
+    border:1px solid rgba(128, 128, 128, 0.247);
+    background-color: white;
+    z-index:3;
+    font-size: 0.8rem;
+    cursor: pointer;
+    display: none;
+}

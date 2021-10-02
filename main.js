@@ -31,6 +31,8 @@ const tags = Array.from(document.querySelectorAll(".tag"));
 const categoryContainer = document.querySelector(".category_container");
 const category = document.querySelector(".myCategory");
 const subCategoryContainer= document.querySelector(".detail_category_container");
+const customerBtn = document.querySelector(".customer_center_btn");
+const settingMenu = document.querySelector(".setting");
 abstractMenu();
 fillCategory();
 const categoryItem = Array.from(categoryContainer.querySelectorAll("li"));
@@ -81,9 +83,16 @@ function swtichTag(e){
     buttonName.textContent = tags[clickedTag].textContent;
 }
 
-
-
+function openTopmenu(){
+    console.log("hi");
+    settingMenu.style.display="flex";
+}
+function closeTopmenu(){
+    settingMenu.style.display="none";
+}
 tags.forEach(tag=> tag.addEventListener("click",swtichTag));
 category.addEventListener("mouseenter",showCategory);
 category.addEventListener("mouseleave",collapseCategory);
 categoryItem.forEach(item=> item.addEventListener("mouseenter",showDetailCategory));
+customerBtn.addEventListener("mouseenter",openTopmenu);
+customerBtn.addEventListener("mouseleave",closeTopmenu);
