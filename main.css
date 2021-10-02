@@ -91,6 +91,8 @@ nav{
     display: flex;
     justify-content: space-between;
     position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+
 }
 
 button{
@@ -379,36 +381,6 @@ footer a {
     
 }
 /*//////카테고리 관련*/
-.category_container{
-    background-color: white;
-    width:200px;
-    position:absolute;
-    z-index: 1;
-    top:45px;
-    left:0px;
-    border:1px solid rgba(0,0,0,0.15);
-    
-}
-.category_btn{
-    align-self: center;
-    cursor: pointer;
-}
-
-.category_container li{
-    list-style: none;
-    padding: 0.5rem 1rem;
-}
-.category_container li:hover{
-    background-color: rgb(230, 230, 230);
-    color:#5F0080;
-    font-weight: bold;
-}
-.category_container li ul li:hover{
-    color:#5F0080;
-    text-decoration: underline;
-    text-underline-offset: 20%;
-    
-}
 .myCategory{
     display: flex;
     justify-content: center;
@@ -416,11 +388,77 @@ footer a {
     cursor: pointer;
 }
 
-
-
-
-.inactive{
+.category_container{
     display: none;
+    background-color: white;
+    width:200px;
+    height:750px;
+    position:absolute;
+    z-index: 1;
+    top:45px;
+    left:0px;
+    border:1px solid rgba(0,0,0,0.15);
+   
+    
+}
+.category_btn{
+    align-self: center;
+    cursor: pointer;
+}
+
+
+.category_container li{
+    list-style: none;
+    padding: 0.5rem 1rem;
+    position:relative;
+    
+}
+.category_container li:hover{
+    background-color: rgb(243, 240, 240);
+    color:#5F0080;
+    font-weight: bold;
+}
+.detail_category_container{
+    background-color: rgb(243, 240, 240);
+    display: none;
+    position: absolute;
+    height:750px;
+    left: 200px;
+    top: 45px;
+    z-index:1;
+    color:black;
+    font-weight: normal;
+    border-top:1px solid rgba(0,0,0,0.3);
+    border-right:1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    width:0px
+
+}
+.detail_category_container li{
+    opacity:0;
+    transition: all 1s;
+    padding:0.5rem 1rem;
+    list-style: none;
+}
+.show_detail_category{
+    width:200px;
+}
+
+.detail_category_container li:hover{
+    color:#5F0080;
+    text-decoration: underline;
+    text-underline-offset: 20%;
+    
+}
+
+.show{
+    opacity: 1;
+}
+.active{
+    display: inline-block;
 }
 .hover_back{
     color:#5F0080;
